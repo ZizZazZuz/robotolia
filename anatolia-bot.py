@@ -13,7 +13,7 @@ import wikipedia
 logging.basicConfig(level=logging.INFO)
    
 # Arguments that need to passed to the build function 
-DEVELOPER_KEY = "AIzaSyBMuk90r9LdFqj-vJaBH-fZOOoIIB2xOVg" 
+DEVELOPER_KEY = os.environ.get('YOUTUBE_DEV_KEY')
 YOUTUBE_API_SERVICE_NAME = "youtube"
 YOUTUBE_API_VERSION = "v3"
    
@@ -273,5 +273,5 @@ async def wiki(ctx, *, arg):
 	sendmsg = "**__" + page.title + "__**\n" + summary + "\n\n<" + page.url + ">"
 	
 	await ctx.send(sendmsg)
-client.run('Njk0NzMzMTk1NjMxMTMyNjkz.XoP6tQ.SJ4wUHxnIvGYezyYDrMSrhJP0Ec')
+client.run(os.environ.get('DISCORD_BOT_TOKEN'))
 
