@@ -350,7 +350,7 @@ class Robotolia(commands.Bot):
 
 	def run(self):
 		try:
-			super().run(s.environ.get('DISCORD_BOT_TOKEN'), reconnect=True)
+			super().run(os.environ.get('DISCORD_BOT_TOKEN'), reconnect=True)
 
 bot = Robotolia()
 @bot.event
