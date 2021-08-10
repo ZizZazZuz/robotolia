@@ -300,7 +300,7 @@ initial_extensions = (
 
 def _prefix_callable(bot, msg):
 	user_id = bot.user.id
-    base = [f'<@!{user_id}> ', f'<@{user_id}> ', '!']
+	base = [f'<@!{user_id}> ', f'<@{user_id}> ', '!']
 	return base
 
 #bot = commands.Bot(command_prefix = '!', description=description, intents=intents)
@@ -327,7 +327,7 @@ class Robotolia(commands.Bot):
 			try:
 				self.load_extension(extension)
 			except Exception as e:
-				printf(f'Failed to load extension {extension}.', file=sys.stderr)
+				print(f'Failed to load extension {extension}.', file=sys.stderr)
 				traceback.print_exc()
 
 	async def on_command_error(self, ctx, error):
@@ -350,7 +350,9 @@ class Robotolia(commands.Bot):
 
 	def run(self):
 		try:
-			super().run(os.environ.get('DISCORD_BOT_TOKEN'), reconnect=True)
+			super().run(os.environ.get('DISCORD_DEV_BOT_TOKEN'), reconnect=True)
+		except:
+			print(f'Starting bot with token failed')
 
 bot = Robotolia()
 @bot.event
