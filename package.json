@@ -1,0 +1,31 @@
+{
+  "name": "robotolia",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000R\u0000o\u0000b\u0000o\u0000t\u0000o\u0000l\u0000i\u0000a\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZizZazZuz/robotolia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZizZazZuz/robotolia/issues"
+  },
+  "homepage": "https://github.com/ZizZazZuz/robotolia#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.2.0",
+    "dotenv": "^10.0.0",
+    "node-fetch": "^2.6.5"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}
