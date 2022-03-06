@@ -39,3 +39,9 @@ Thumbs.db
 # .vs folder #
 ##############
 /.vs/
+
+# js config files #
+###################
+.env
+config.json
+node_modules
